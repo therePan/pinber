@@ -1,0 +1,108 @@
+.intention {
+  position: relative;
+  .listContent {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 101;
+  }
+  .list {
+    width: 322px;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -161px;
+    top: 65px;
+    border-radius: 5px;
+    z-index: 102;
+    li {
+      width: 250px;
+      height: 70px;
+      margin: 0 auto;
+      border-bottom: 1px solid #5b5b5b;
+      color: #fff;
+      font-size: 26px;
+      text-align: center;
+      line-height: 70px;
+    }
+    .arrow {
+      border:12px solid rgba(0,0,0,0);
+      border-bottom:12px solid rgba(0,0,0,0.8);
+      position: absolute;
+      left: 149px;
+      top: -23px;
+    }
+  }
+  .manegerJob {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color:rgba(131, 126, 126, 0.6);
+    color: #fff;
+    font-size: 26px;
+    border-radius: 8px;
+  }
+}
+.bar {
+  display: block;
+  span{
+    display:block;
+    height: 100%;
+    float: left;
+    max-width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  >svg {
+    vertical-align: middle;
+    margin-top: -4px;
+    width: 36px;
+  }
+}
+.headerContent {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 102;
+}
+.content {
+  width:100%;
+  padding-top: 175px;
+}
+.am-menu {
+  background-color: rgba(0,0,0,0.6)
+}
+.foo-menu {
+  position: relative;
+  z-index: 1000 !important;
+}
+.top-nav-bar {
+  position: relative;
+  z-index: 1000 !important;
+  background-color: #008AE6;
+  color: #FFF;
+}
+.am-navbar-title {
+  color: #FFF!important;
+}
+.menu-active:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+.icon {
+  margin-left: 10px;
+  width: 30px;
+}

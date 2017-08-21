@@ -1,0 +1,135 @@
+.color {
+  color: red;
+}
+.cardContent {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 27px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+  :after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    background: #f5f5f9;
+  }
+
+  .top {
+    width: 100%;
+    &:after{
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+
+  .leftIcon {
+    width: 60%;
+    float: left;
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+  .jobName {
+    font:36px/56px "微软雅黑";
+  }
+  .salary {
+    color: #ff850c;
+    font: 24px/49px "微软雅黑";
+  }
+  .hotelName {
+    color: #999999;
+    font: 24px/49px "微软雅黑";
+  }
+  .rightContent {
+    width: 40%;
+    float: right;
+  }
+  .distant {
+    text-align: right;
+    width: 100%;
+    display: block;
+    font: 24px/38px "微软雅黑";
+    color: #999999;
+    span{
+      color: #f44f40;
+    }
+  }
+
+}
+.photoContent {
+  width: 100%;
+  margin-bottom: 28px;
+  float: left;
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  ul {
+    height: 102px;
+    width: 100%;
+    float: left;
+    max-width: 600px;
+    overflow: hidden;
+  }
+  .images {
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    float: left;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.linkman {
+  width: 100%;
+  height: 95px;
+  border-top: 1px solid #e5e5e5;
+  overflow: hidden;
+  .linkmanHead {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+    overflow: hidden;
+    float: left;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .linkIntroduce {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    margin: 21px 0 auto 19px;
+    font-size: 24px;
+    float: left;
+  }
+  .tlakBtn {
+    display: block;
+    width: 113px;
+    height: 42px;
+    line-height: 42px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    background-color: #ff850c;
+    border-radius: 30px;
+    float: right;
+  }
+}
+a{
+  color: #333;
+}

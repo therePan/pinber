@@ -1,0 +1,83 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+}
+
+.icon {
+  width: 80px;
+  padding: 24px 0;
+}
+
+.list {
+  &:after {
+    width: 100%;
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  &:last-child:after {
+    content: none;
+  }
+  img{
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    border-radius: 100%;
+  }
+  .tip{
+    display: block;
+    position: absolute;
+    background: red;
+    top: 15px;
+    left: 90px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+  }
+}
+
+.main {
+  padding-top: 90px;
+  margin-bottom: 10px;
+}
+
+.tit {
+  color: @color-text-base;
+  padding: 18px 30px 12px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.time, .lastMessage {
+  color: #999;
+  font-size: 26px;
+}
+
+.party, .lastMessage {
+  width: 100%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.party {
+  @width: 160px;
+  font-weight: normal;
+  width: calc(~'100% - @{width}');
+}
+
+.time {
+  float: right;
+}
+
+.icc {
+  border: 1px solid #fff;
+  padding: 0 12px;
+}

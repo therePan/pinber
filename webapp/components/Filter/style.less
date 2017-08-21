@@ -1,0 +1,100 @@
+.filterBar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  .area {
+    height: 100%;
+    max-width: calc(~'100% - 40px');
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .icon {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    >svg {
+      width: 30px;
+      height: 30px;
+      margin-top: -4px;
+      vertical-align: middle;
+    }
+  }
+  span {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 44px;
+    line-height: 44px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    color: #666666;
+    font-size: 24px;
+    &:last-child {
+      border: none;
+    }
+    
+  }
+  .hadFilter {
+    color: #ff850c;
+  }
+}
+.filterpop {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 88px;
+  z-index: 9;
+}
+.filterCon {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 175px;
+  z-index: 130;
+}
+.opcityCon {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 110;
+}
+.balckCon {
+  width: 100%;
+  height: 100%;
+  margin-top: 175px;
+  background-color: rgba(0,0,0,0.3);
+}
+.foo-menu {
+  position: relative;
+  z-index: 1000 !important;
+}
+.top-nav-bar {
+  position: relative;
+  z-index: 1000 !important;
+  background-color: #008AE6;
+  color: #FFF;
+}
+.am-navbar-title {
+  color: #FFF!important;
+}
+.menu-active:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+

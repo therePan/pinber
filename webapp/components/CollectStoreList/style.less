@@ -1,0 +1,82 @@
+/**
+ * Created by huangchao on 2017/7/11.
+ */
+.list_wrap{
+  text-align: center;
+  background-color: #fff;
+  //margin-bottom: 20px;
+  .store_info{
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    height: 82px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .store_img{
+    height: 77px;
+    width: 77px;
+    background-size: contain;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+  .boss_info{
+    flex-grow:1;
+    text-align: left;
+    width: 80%;
+    >div{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .company{
+      color: #aaaaaa;
+      font-size: 25px;
+      line-height: 1.6;
+    }
+  }
+  .stare{
+    img{
+      width: 44px;
+    }
+  }
+  .list_item{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .salary_range_str{
+      color: #ff850c;
+    }
+  }
+}
+.listitem{
+  color: red;
+  .am-list-content{
+    padding-bottom: 0 !important;
+  }
+}
+.nav{
+  color: #333333;
+}
+.wrap{
+  //margin-bottom: 20px;
+  >div:after{
+    border-bottom: none !important;
+  }
+}
+.list_wrap:after{
+  content: '';
+  height: 20px;
+  background-color: #f5f5f9;
+  width: 100%;
+  display: block;
+}
+//var map = new BMap.Map("allmap");
+//var point = new BMap.Point(110.4144, 39.915);
+//map.centerAndZoom(point, 15);
+//var marker = new BMap.Marker(point);  // 创建标注
+//map.addOverlay(marker);               // 将标注添加到地图中
+//marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画

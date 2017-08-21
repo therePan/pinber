@@ -1,0 +1,89 @@
+.bossPost {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #666;
+  margin-bottom: 30px;
+  width: 100%;
+  //>div{
+  //  display: inline-block;
+  //  width: 50%;
+  //}
+  a {
+    color: #666;
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+  }
+  span {
+    color: #ff850c;
+  }
+}
+
+.nav {
+  @height: 120px;
+  position: relative;
+  height: @height;
+  &:before {
+    @diff: 72px;
+    content: '';
+    border-right: 1px solid #999;
+    height: @diff;
+    position: absolute;
+    left: -2px;
+    top: calc(~"50% - @{diff}/2");
+  }
+}
+
+.icon {
+  width: 36px;
+}
+
+.icon2 {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.list {
+  color: #666;
+}
+
+.wrap {
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #f75e5c 0%, #ffb250 100%);
+}
+
+.headBox {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #fb8956;
+}
+
+.headPro{
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  opacity: 0;
+}
+
+.name{
+  padding-top: 20px;
+  font-size: 42px;
+  color: #fff;
+}
+.actionSheetContainer {
+  margin: 0 0.3rem;
+}
+
+.my-action-sheet .am-action-sheet-share-list-item-icon img {
+  width: 0.72rem;
+}
